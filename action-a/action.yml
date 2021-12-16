@@ -1,0 +1,17 @@
+name: "Hello actions"
+description: "Say Hello"
+author: "coder@badhataction.guru"
+
+inputs:
+  MY_NAME:
+    description: "Who to say hello to"
+    required: true
+    default: "Coder"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
